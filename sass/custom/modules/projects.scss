@@ -1,0 +1,70 @@
+// ==========================================================================
+// PROJECTS
+// ==========================================================================//
+
+.project {
+    //layout
+    text-align: center;
+}
+
+.project__link {
+    //layout
+    position: relative;
+    max-width: 358px;
+
+    //transitions
+    &:hover>.project__pic {
+        opacity: 0.8;
+    }
+    
+    &:hover>.project__button {
+        opacity: 1.0;
+		transform: translate(-50%, -50%);
+    }
+}
+
+.project__pic {
+    //design
+    border: 1px solid $mediumgrey;
+    border-radius: 8px;
+
+    //transitions
+    @include transition(opacity 0.3s ease);
+    opacity: 1.0;
+}
+
+.project__button {
+    //text
+    @extend .h6;
+    font-weight: 700;
+    font-family: $font-family--secondary;
+    
+    //color
+    color: $darkred;
+    
+    //design
+    white-space: nowrap;
+    border: 2px solid $darkred;
+    border-radius: 5px;
+    
+    @include backface-visibility(hidden); //smoother text transformation
+    text-shadow: 1px 1px 1px $black;
+    box-shadow: 1px 1px 3px $black;
+    
+    //layout
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: $z-pseudo;
+    padding: .4em;
+    
+    //transitions
+    @include transition(all 0.3s ease);
+    opacity: 0;
+	transform: translate(-50%, -35%);
+}
+
+.project__icon {
+    //text
+    @extend .h3;
+}

@@ -1,0 +1,45 @@
+// ==========================================================================
+// BASE RULES
+// ==========================================================================//
+
+body {
+    //default font-color
+    color: $charcoal;
+}
+
+//headers
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: $font-weight--bolder;
+    @extend .text-center;
+}
+
+//anchor
+a {
+	@include hover($darkred);
+}
+
+p a {
+	@include hover() {
+		text-decoration: underline;
+	}
+}
+
+//horizontal rules
+hr.redline {
+    //design
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid $red;
+    
+    //layout
+    width: 90px;
+}
+
+hr.greyline {
+    //color
+    background-color: #F0F0F0;
+
+    //layout
+    width: 80%;
+    max-width: 800px;
+}

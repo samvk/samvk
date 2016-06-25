@@ -1,0 +1,135 @@
+// ==========================================================================
+// NAVBAR
+// ==========================================================================//
+
+nav {
+    //base font-size
+    font-size: 1rem;
+    
+    //color
+    @include palette($white, $charcoal, $white);
+    
+    //layout
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    //text
+    text-transform: uppercase;
+    
+    //color 
+    @include hover($red);
+    
+    //design
+    @include backface-visibility(hidden); //smoother text transformation
+}
+
+.nav__hamburger {
+    //text
+    @extend .h3;
+    
+    //design
+    cursor: pointer;
+    
+    //layout
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 32px;
+}
+
+.nav__logo {
+    //text
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--bold;
+    @extend .h5;
+    
+    //layout
+    @include padding-top-bottom(0.4rem);
+
+	@include media($sm-min, "min") {
+		//design
+		pointer-events: none; //remove link to top on desktop
+	}
+}
+
+.nav-list {
+    //remove default list padding
+    @extend .no-spacing;
+    @extend .list--no-spacing;
+    
+    display: none; //default collapsed
+}
+
+//spacing for mobile nav
+.nav-list__item {
+    &:first-child {
+        padding-top: 0.5rem;
+        border-top: 1px solid $trueblack;
+    }
+    &:last-child {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.nav-list__item--a {
+    //text
+    font-weight: $font-weight--bold;
+
+    //layout
+    width: 100%; //give anchor same dimensions as li
+    @include padding-left-right(0.6em);
+    @include line-height(2.4em);
+    
+    //nav state
+    &.is-highlighted {
+        color: $white;
+        background-color: $red;
+    }
+}
+
+//for desktop layout
+@include media($sm-min, "min") {
+    
+    nav {
+        //color
+        @include palette($charcoal, $white, $charcoal);
+        
+        //layout
+        position: relative;
+        @include padding-top-bottom(1.5em);
+    }
+    
+    .nav__hamburger {
+        display: none;
+    }
+    
+    .nav__logo {
+        //layout
+        float: left;
+    }
+    
+    .nav-list {
+        //layout
+        float: right;
+        display: block !important; //override slideToggle()
+    }
+    
+    .nav-list__item {
+        //layout
+        display: inline-block !important; //override slideToggle()
+        
+        //remove mobile border line
+        &:first-child {
+            border: 0;
+        }
+    }
+    
+    //nav state
+    .nav-list__item--a.is-highlighted {
+        color: inherit;
+        background-color: inherit;
+    }
+}

@@ -1,0 +1,97 @@
+// ==========================================================================
+// CONTACT
+// ==========================================================================//
+
+#contact {
+	//base font-size
+	font-size: 1rem;
+}
+
+input, textarea {
+	//color
+	background-color: $lightgrey;
+	
+	//layout
+	width: 100%;
+	padding: 0.6em 0.9em;
+	margin-bottom: 0.75em;
+	
+	//design
+	border-radius: 3px;
+	
+	//placeholder text
+	@include input-placeholder {
+		font-style: italic;
+		font-weight: $font-weight--light;
+	}
+}
+
+textarea {
+	//layout
+	height: 9em;
+}
+
+// ========== Input Placeholder =============
+.input__placeholder {
+    //text
+    font-size: 0.9em;
+    
+    //layout
+    position: relative;
+
+    //transitions
+    @include transition(opacity 500ms, transform 500ms);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.input__placeholder.is-displayed {
+    //transitions
+    visibility: visible;
+    opacity: 1.0;
+    transform: translateY(0%);
+}
+// ===========================================//
+
+// ========== Contact Cards =============
+.contact-card__container {
+    //layout
+    margin-top: 2.5em;
+
+    @include media($sm-min, "min") {
+        margin-top: 4em;
+    }
+}
+
+.contact-card {
+    //text
+    font-size: .95rem;
+
+    //color
+    color: $charcoal;
+    a { color: $charcoal };
+
+    //layout
+    width: 16em;
+    @extend .center;
+    margin-bottom: 2em;
+}
+
+.contact-card__icon {
+    //text
+    @extend .h2;
+
+    //layout
+    vertical-align: middle;
+}
+
+.contact-card__text {
+    //text
+    font-family: $font-family--secondary;
+
+    //layout
+    display: inline-block;
+    vertical-align: middle;   
+}
+// ===========================================//

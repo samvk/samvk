@@ -1,0 +1,16 @@
+// ==========================================================================
+// SECTIONS and ARTICLES
+// ==========================================================================//
+
+section {
+    //base font-size
+    font-size: 1rem;
+    
+    //layout
+    @include padding-top-bottom(5em);
+}
+
+//section zebra background-coloring
+section:nth-child(odd) {
+    background-color: $offwhite;
+}

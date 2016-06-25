@@ -1,0 +1,27 @@
+// ==========================================================================
+// HEADER
+// ==========================================================================//
+
+header {
+    //base font-size
+    font-size: 1rem;
+    
+    //layout
+    text-align: center;
+    padding-top: 6.5em;
+    padding-bottom: 5em;
+    
+    //remove extra padding from fixed mobile navbar
+    @include media($sm, "min") {
+        padding-top: 5em;
+    }
+}
+
+.header__sub-title {
+    //text
+    @extend .h6;
+	font-weight: $font-weight--light;
+    
+    //layout
+    margin-bottom: .8em;
+}

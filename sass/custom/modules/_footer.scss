@@ -1,0 +1,37 @@
+// ==========================================================================
+// FOOTER
+// ==========================================================================//
+
+footer {
+	//base font-size
+	font-size: 1rem;
+    
+    //design
+    border-top: 6px solid $lightergrey;
+    
+	//layout
+	@include padding-top-bottom(4em);
+	text-align: center;
+	@extend .no-spacing;
+	
+	hr {
+		@include margin-top-bottom(2em);
+	}
+}
+
+.social__links {
+	//text
+	@extend .h3;
+	@extend .no-spacing;
+	
+	//color
+	//a {@include hover($darkred); }
+}
+
+.footer__copyright {
+	//text
+	@extend .h6;
+	font-weight: $font-weight--medium;
+	font-family: $font-family--secondary;
+	text-transform: uppercase;
+}
