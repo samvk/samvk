@@ -64,6 +64,19 @@
 	transform: translate(-50%, -35%);
 }
 
+.project__audio-warning {
+    //text
+    @extend .h5;
+    
+    //design
+    color: $black;
+    
+    //layout
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
 .project__icon {
     //text
     @extend .h3;

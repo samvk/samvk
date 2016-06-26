@@ -992,11 +992,11 @@ html {
   }
 }
 
-.h5, h5, .nav__logo {
+.h5, h5, .nav__logo, .project__audio-warning {
   font-size: 2em;
 }
 @media screen and (max-width: 767px) {
-  .h5, h5, .nav__logo {
+  .h5, h5, .nav__logo, .project__audio-warning {
     font-size: 1.8em;
   }
 }
@@ -1130,7 +1130,7 @@ nav {
   text-align: left;
 }
 
-.text-center, .h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
+.text-center, .h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
   text-align: center;
 }
 
@@ -1357,7 +1357,7 @@ body {
   color: #262626;
 }
 
-.h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
+.h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
   font-weight: 900;
 }
 
@@ -1594,6 +1594,13 @@ header {
   transition: all 0.3s ease;
   opacity: 0;
   transform: translate(-50%, -35%);
+}
+
+.project__audio-warning {
+  color: #0b0b0b;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
 }
 
 #contact {

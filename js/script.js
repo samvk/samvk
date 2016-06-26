@@ -11,7 +11,7 @@ $(document).ready(function () {
             //Both "html" and "body" required for browser compatibility
             $("html, body").stop().animate({
                 scrollTop: $(this).offset().top
-            }, 1000);
+            }, 1500, "easeInOutQuart");
         });
     };
 
