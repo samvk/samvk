@@ -1110,6 +1110,21 @@ nav {
   z-index: 300;
 }
 
+sub, sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 0.85em !important;
+  line-height: 0;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
 .underline, u {
   text-decoration: underline;
 }

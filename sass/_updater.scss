@@ -55,3 +55,15 @@ a, span, img {
 nav {
     z-index: $z-nav;
 }
+
+//normalize sup/sub tags
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 0.85em !important;
+    line-height: 0;
+}
+
+sup {top: -0.5em; }
+
+sub {bottom: -0.25em; }
