@@ -11,7 +11,7 @@ require "dbconnection.php";
 
 $name = mysqli_real_escape_string($dbc, trim($_POST["name"]));
 $email = mysqli_real_escape_string($dbc, trim($_POST["email"]));
-$genre = mysqli_real_escape_string($dbc, trim($_POST["genre"]));
+$phone = mysqli_real_escape_string($dbc, trim($_POST["phone"]));
 $message = mysqli_real_escape_string($dbc, trim($_POST["message"]));
 
 //empty fields check (shouldn't be seen if html:required working)
@@ -20,7 +20,7 @@ if (empty($name) || empty($email) || empty($message)) {
     exit;
 }
 
-//Valid email check (shouldn't be seen if html:required working)
+//Valid email check (shouldn't be seen if html-required working)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "<p>Invalid email format.</p>";
     exit;
@@ -33,15 +33,15 @@ if ($_POST["address"] != "") {
 }
 
 // Send copy of message to database
-mysqli_query($dbc, "INSERT INTO contact(name, email, genre, message) VALUES ('$name', '$email', '$genre', '$message')");
+mysqli_query($dbc, "INSERT INTO contact(name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')");
 
 // Send message directly to crec email
-$to = "skauffman@crec.org";
-$email_subject = "New message from $name - \"Read Every Day\"";
-$email_body = "You have received a new message from CREC's Read Every Day.\n\nHere are the details:\n\nName: $name\n\nEmail: $email_address\n\nFavorite Genre: $genre\n\nMessage:\n$message";
-$headers = "From: noreply@crec.org/readeveryday\n";
+$to = "hello@samvk.com";
+$email_subject = "New message from $name - SamVK";
+$email_body = "You have received a new message from SamVK. Here are the details...\n\nName: $name\n\nEmail: $email\n\nPhone Number: $phone\n\nMessage:\n$message";
+$headers = "From: samvk.com\n";
 $headers .= "Reply-To: $email_address";	
 
-mail($to,$email_subject,$email_body,$headers);
+mail(stripslashes($to), stripslashes($email_subject), stripslashes($email_body), stripslashes($headers));
 
 echo "<p>Submitted!</p>";
