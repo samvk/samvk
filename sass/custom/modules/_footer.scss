@@ -10,7 +10,7 @@ footer {
     border-top: 6px solid $lightergrey;
     
 	//layout
-	@include padding-top-bottom(4em);
+	@include padding-top-bottom(3em);
 	text-align: center;
 	@extend .no-spacing;
 	
@@ -23,9 +23,6 @@ footer {
 	//text
 	@extend .h3;
 	@extend .no-spacing;
-	
-	//color
-	//a {@include hover($darkred); }
 }
 
 .footer__copyright {

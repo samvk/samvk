@@ -6,7 +6,7 @@ nav {
     //base font-size
     font-size: 1rem;
     
-    //color
+    //design
     @include palette($white, $charcoal, $white);
     
     //layout
@@ -18,10 +18,8 @@ nav a {
     //text
     text-transform: uppercase;
     
-    //color 
-    @include hover($red);
-    
     //design
+	@include hover($red);
     @include backface-visibility(hidden); //smoother text transformation
 }
 
@@ -94,7 +92,7 @@ nav a {
 @include media($sm-min, "min") {
     
     nav {
-        //color
+        //design
         @include palette($charcoal, $white, $charcoal);
         
         //layout

@@ -9,39 +9,40 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 
 require "dbconnection.php";
 
-$name = mysqli_real_escape_string($dbc, trim($_POST["name"]));
-$email = mysqli_real_escape_string($dbc, trim($_POST["email"]));
-$phone = mysqli_real_escape_string($dbc, trim($_POST["phone"]));
-$message = mysqli_real_escape_string($dbc, trim($_POST["message"]));
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
+$phone = trim($_POST["phone"]);
+$message = trim($_POST["message"]);
 
-//empty fields check (shouldn't be seen if html:required working)
+//empty fields check (shouldn't be seen unless falsey value passed on purpose)
 if (empty($name) || empty($email) || empty($message)) {
-    echo "<p>Oops! You left some required fields blank.</p>";
+    echo "<p class='loud'>Oops! You left some required fields blank.</p>";
     exit;
 }
 
-//Valid email check (shouldn't be seen if html-required working)
+//Valid email check (shouldn't be seen unless falsey value passed on purpose)
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "<p>Invalid email format.</p>";
+    echo "<p class='loud'>Oops! Can you double check your email?</p>";
     exit;
 }
 
 //Spam bot honeypot
-if ($_POST["address"] != "") {
-    echo "<p class='error'>Bad form input.</p>";
+if ($_POST["address"] !== "") {
+    echo "<p class='loud'>Bad form input.</p>";
     exit;
 }
 
-// Send copy of message to database
-mysqli_query($dbc, "INSERT INTO contact(name, email, phone, message) VALUES ('$name', '$email', '$phone', '$message')");
+// Send message to database
+$stmt = $db->prepare("INSERT INTO contact(name, email, phone, message) VALUES (:name, :email, :phone, :message)");
+$stmt->execute(array(':name' => $name, ':email' => $email, ':phone' => $phone, ':message' => $message));
 
-// Send message directly to crec email
+// Send message to email
 $to = "hello@samvk.com";
 $email_subject = "New message from $name - SamVK";
 $email_body = "You have received a new message from SamVK. Here are the details...\n\nName: $name\n\nEmail: $email\n\nPhone Number: $phone\n\nMessage:\n$message";
 $headers = "From: samvk.com\n";
 $headers .= "Reply-To: $email_address";	
 
-mail(stripslashes($to), stripslashes($email_subject), stripslashes($email_body), stripslashes($headers));
+mail($to, $email_subject, $email_body, $headers);
 
-echo "<p>Submitted!</p>";
+echo "<p class='loud'>Submitted!</p>";

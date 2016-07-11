@@ -10,7 +10,7 @@
     text-transform: uppercase;
     font-weight: $font-weight--bold;
     
-    //color
+    //design
     @include palette($white, $red, $white);
     @include hover($white, $lightred);
     

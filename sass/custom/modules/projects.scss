@@ -13,13 +13,21 @@
     max-width: 358px;
 
     //transitions
+
     &:hover>.project__pic {
+        //design
         opacity: 0.8;
     }
     
-    &:hover>.project__button {
-        opacity: 1.0;
-		transform: translate(-50%, -50%);
+    @include media($sm-min, "min") {
+        //button hidden on mobile
+        &:hover>.project__button {
+            //design
+            opacity: 1.0;
+
+            //layout
+            top: 38%; //raise button up ( translateY() causing text to shift in Firefox )
+        }
     }
 }
 
@@ -39,10 +47,8 @@
     font-weight: 700;
     font-family: $font-family--secondary;
     
-    //color
-    color: $darkred;
-    
     //design
+	color: $darkred;
     white-space: nowrap;
     border: 2px solid $darkred;
     border-radius: 5px;
@@ -52,16 +58,16 @@
     box-shadow: 1px 1px 3px $black;
     
     //layout
+    width: 8.2em;
+    @include line-height(2.4em);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 41%;
+    left: calc(50% - 4.1em); //50% - half button-width ( translateX(-50%) causing text to shift in Firefox )
     z-index: $z-pseudo;
-    padding: .4em;
     
     //transitions
     @include transition(all 0.3s ease);
     opacity: 0;
-	transform: translate(-50%, -35%);
 }
 
 .project__audio-warning {

@@ -1402,20 +1402,20 @@ hr.greyline {
   text-transform: uppercase;
   font-weight: 700;
   background-color: #EF6250;
-  color: #fff;
+  color: #FFF;
   padding: 1.3em 2em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
   border-radius: 5px;
 }
 .button p, button p, .button blockquote, button blockquote, .button li, button li {
-  color: #fff;
+  color: #FFF;
 }
 .button a, button a {
-  color: #fff;
+  color: #FFF;
 }
 .button:hover, button:hover, .button:active, button:active {
-  color: #fff;
+  color: #FFF;
   background-color: #F06F5E;
 }
 
@@ -1432,15 +1432,15 @@ section:nth-child(odd) {
 nav {
   font-size: 1rem;
   background-color: #262626;
-  color: #fff;
+  color: #FFF;
   position: fixed;
   width: 100%;
 }
 nav p, nav blockquote, nav li {
-  color: #fff;
+  color: #FFF;
 }
 nav a {
-  color: #fff;
+  color: #FFF;
 }
 
 nav a {
@@ -1495,13 +1495,13 @@ nav a:hover, nav a:active {
   line-height: 2.4em;
 }
 .nav-list__item--a.is-highlighted {
-  color: #fff;
+  color: #FFF;
   background-color: #EF6250;
 }
 
 @media screen and (min-width: 768px) {
   nav {
-    background-color: #fff;
+    background-color: #FFF;
     color: #262626;
     position: relative;
     padding-top: 1.5em;
@@ -1571,9 +1571,11 @@ header {
 .project__link:hover > .project__pic {
   opacity: 0.8;
 }
-.project__link:hover > .project__button {
-  opacity: 1.0;
-  transform: translate(-50%, -50%);
+@media screen and (min-width: 768px) {
+  .project__link:hover > .project__button {
+    opacity: 1.0;
+    top: 38%;
+  }
 }
 
 .project__pic {
@@ -1596,23 +1598,24 @@ header {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  text-shadow: 1px 1px 1px #0b0b0b;
-  box-shadow: 1px 1px 3px #0b0b0b;
+  text-shadow: 1px 1px 1px #0B0B0B;
+  box-shadow: 1px 1px 3px #0B0B0B;
+  width: 8.2em;
+  height: 2.4em;
+  line-height: 2.4em;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 41%;
+  left: calc(50% - 4.1em);
   z-index: 200;
-  padding: .4em;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
-  transform: translate(-50%, -35%);
 }
 
 .project__audio-warning {
-  color: #0b0b0b;
+  color: #0B0B0B;
   position: absolute;
   top: 0.5em;
   right: 0.5em;
@@ -1624,10 +1627,10 @@ header {
 
 input, textarea {
   background-color: #E6E6E6;
+  border-radius: 3px;
   width: 100%;
   padding: 0.6em 0.9em;
   margin-bottom: 0.75em;
-  border-radius: 3px;
 }
 input:-moz-placeholder, textarea:-moz-placeholder {
   font-style: italic;
@@ -1700,8 +1703,8 @@ textarea {
 footer {
   font-size: 1rem;
   border-top: 6px solid #EBEBEB;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   text-align: center;
 }
 footer hr {

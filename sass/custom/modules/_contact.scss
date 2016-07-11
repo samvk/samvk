@@ -8,16 +8,14 @@
 }
 
 input, textarea {
-	//color
+	//design
 	background-color: $lightgrey;
-	
+	border-radius: 3px;
+
 	//layout
 	width: 100%;
 	padding: 0.6em 0.9em;
 	margin-bottom: 0.75em;
-	
-	//design
-	border-radius: 3px;
 	
 	//placeholder text
 	@include input-placeholder {
@@ -68,7 +66,7 @@ textarea {
     //text
     font-size: .95rem;
 
-    //color
+    //design
     color: $charcoal;
     a { color: $charcoal };
 
