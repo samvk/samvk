@@ -61,7 +61,7 @@
 				
 				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
 				<p>On a personal note: I love metal detecting, watching movies, the theatre, and building things.</p>
-                <p>You can <a href="https://github.com/samvnkauffman" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/sam-kauffman-111b18ba" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
+                <p>You can <a href="https://github.com/samvk" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/sam-kauffman-111b18ba" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
 
 				<a class="autoscroll button" href="#projects">View my projects</a>
             </div>
@@ -87,7 +87,7 @@
                         <img class="project__pic" src="img/projects/cttreasurehunter.png" alt="ctTreasureHunter.com">
                     </a>
                     <ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/cttreasurehunter" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/cttreasurehunter" target="_blank"><span class="fa fa-github-square"></span></a></li>
 						<li><a class="project__icon" title="See live version" href="http://cttreasurehunter.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
                     </ul>
                 </div>
@@ -98,7 +98,7 @@
                         <img class="project__pic" src="img/projects/readeveryday.png" alt="CREC.org/ReadEveryDay">
                     </a>
                     <ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/readeveryday" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/readeveryday" target="_blank"><span class="fa fa-github-square"></span></a></li>
 						<li><a class="project__icon" title="See live version" href="http://crec.org/readeveryday" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
 					</ul>
                 </div>
@@ -109,7 +109,7 @@
                         <img class="project__pic" src="img/projects/daterussell.png" alt="DateRussell.com">
                     </a>
                     <ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/daterussell" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/daterussell" target="_blank"><span class="fa fa-github-square"></span></a></li>
 						<li><a class="project__icon" title="See live version" href="http://daterussell.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
 					</ul>
                 </div>
@@ -124,7 +124,7 @@
 						<img class="project__pic" src="img/projects/samvk.png" alt="samvk.com">
 					</a>
 					<ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/samvk" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/samvk" target="_blank"><span class="fa fa-github-square"></span></a></li>
 					</ul>
 				</div>
 
@@ -142,7 +142,7 @@
                         <span class="fa fa-volume-up project__audio-warning"></span>
                     </a>
                     <ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/Team-Fortress-2" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/teamfortress2" target="_blank"><span class="fa fa-github-square"></span></a></li>
 					</ul>
                 </div>
 
@@ -152,7 +152,7 @@
                         <img class="project__pic" src="img/projects/snake.png" alt="snake.samvk.com">
                     </a>
                     <ul class="list--inline-block center-content">
-						<li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/snake" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/snake" target="_blank"><span class="fa fa-github-square"></span></a></li>
 					</ul>
                 </div>
                 
@@ -162,7 +162,7 @@
                         <img class="project__pic" src="img/projects/metaldetecting.png" alt="metaldetecting.samvk.com">
                     </a>
                     <ul class="list--inline-block center-content">
-                        <li><a class="project__icon" title="GitHub" href="https://github.com/samvnkauffman/metaldetecting" target="_blank"><span class="fa fa-github-square"></span></a></li>
+                        <li><a class="project__icon" title="GitHub" href="https://github.com/samvk/metaldetecting" target="_blank"><span class="fa fa-github-square"></span></a></li>
                         <li><a class="project__icon" title="See live version" href="http://cttreasurehunter.com/metaldetecting" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
                     </ul>
                 </div>
@@ -249,7 +249,7 @@
 	<footer>
 	
 		<ul class="list--inline-block list--no-spacing social__links">
-			<li><a href="https://github.com/samvnkauffman" target="_blank" title="GitHub"><span class="fa fa-fw fa-github"></span></a></li>
+			<li><a href="https://github.com/samvk" target="_blank" title="GitHub"><span class="fa fa-fw fa-github"></span></a></li>
 			<li><a href="https://linkedin.com/in/sam-kauffman-111b18ba" target="_blank" title="LinkedIn"><span class="fa fa-fw fa-linkedin"></span></a></li>
 			<li><a href="docs/SamKauffman_Resume.pdf" target="_blank" title="My resume"><span class="fa fa-fw fa-file-text-o"></span></a></li>
 			<li><a href="mailto:hello@samvk.com" target="_blank" title="Email me"><span class="fa fa-fw fa-envelope"></span></a></li>

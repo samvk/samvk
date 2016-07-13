@@ -47,7 +47,7 @@ nav a {
     //layout
     @include padding-top-bottom(0.4rem);
 
-	@include media($sm-min, "min") {
+	@include media($sm-min) {
 		//design
 		pointer-events: none; //remove link to top on desktop
 	}
@@ -89,7 +89,7 @@ nav a {
 }
 
 //for desktop layout
-@include media($sm-min, "min") {
+@include media($sm-min) {
     
     nav {
         //design

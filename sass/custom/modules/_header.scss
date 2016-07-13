@@ -12,7 +12,7 @@ header {
     padding-bottom: 5em;
     
     //remove extra padding from fixed mobile navbar
-    @include media($sm, "min") {
+    @include media($sm-min) {
         padding-top: 5em;
     }
 }

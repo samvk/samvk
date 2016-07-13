@@ -1545,7 +1545,7 @@ header {
   padding-top: 6.5em;
   padding-bottom: 5em;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   header {
     padding-top: 5em;
   }

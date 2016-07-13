@@ -12,7 +12,7 @@ img.padding {
 }
 
 img.xs-full-width {
-	@include media($xs) {
+	@include media($xs-max) {
 		width: 100%;
 	}
 }

@@ -5,19 +5,19 @@
 //hidden elements
 
 .hide-xs {
-	@include media($xs) {
+	@include media($xs-max) {
 		display: none;
 	}
 }
 
 .hide-sm {
-	@include media($sm) {
+	@include media($sm-max) {
 		display: none;
 	}
 }
 
 .hide-md {
-	@include media($md) {
+	@include media($md-max) {
 		display: none;
 	}
 }
@@ -29,19 +29,19 @@
 }
 
 .show-xs {
-	@include media($xs) {
+	@include media($xs-max) {
 		display: block;
 	}
 }
 
 .show-sm {
-	@include media($sm) {
+	@include media($sm-max) {
 		display: block;
 	}
 }
 
 .show-md {
-	@include media($md) {
+	@include media($md-max) {
 		display: block;
 	}
 }

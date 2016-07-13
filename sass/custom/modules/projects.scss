@@ -19,7 +19,7 @@
         opacity: 0.8;
     }
     
-    @include media($sm-min, "min") {
+    @include media($sm-min) {
         //button hidden on mobile
         &:hover>.project__button {
             //design

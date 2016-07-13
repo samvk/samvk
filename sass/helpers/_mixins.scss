@@ -26,9 +26,24 @@
 // 
 // ==========================================================================//
 
-@mixin media($breakpoint, $query: "max") {
-	$query: $query + "-width";
-	@media screen and (#{$query}: #{$breakpoint}) { @content; }
+//Media queries breakpoints
+$sm-min: 768px;
+$md-min: 992px;
+$lg-min: 1200px;
+
+$xs-max: ($sm-min - 1);
+$sm-max: ($md-min - 1);
+$md-max: ($lg-min - 1);
+
+
+@mixin media($breakpoint) {
+	$query: "";
+	@if $breakpoint == $sm-min or $breakpoint == $md-min or $breakpoint == $lg-min {
+		$query: "min-width";	
+	} @else if $breakpoint == $xs-max or $breakpoint == $sm-max or $breakpoint == $md-max {
+		$query: "max-width";
+	}
+	@media screen and ($query: $breakpoint) { @content; }
 }
 
 //HOVER and ACTIVE(allow common color arguments or content)

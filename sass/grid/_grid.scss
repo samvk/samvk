@@ -8,13 +8,13 @@
 .container {
   @include container-fixed;
 
-  @include media($sm-min, "min") {
+  @include media($sm-min) {
     width: $container-sm;
   }
-  @include media($md-min, "min") {
+  @include media($md-min) {
     width: $container-md;
   }
-  @include media($lg-min, "min") {
+  @include media($lg-min) {
     width: $container-lg;
   }
 }
@@ -46,18 +46,18 @@
 
 // Small grid (Columns, offsets, pushes, and pulls for the small device range, from phones to tablets.)
 
-@include media($sm-min, "min") {
+@include media($sm-min) {
   @include make-grid(sm);
 }
 
 // Medium grid (Columns, offsets, pushes, and pulls for the desktop device range.)
 
-@include media($md-min, "min") {
+@include media($md-min) {
   @include make-grid(md);
 }
 
 // Large grid (Columns, offsets, pushes, and pulls for the large desktop device range.)
 
-@include media($lg-min, "min") {
+@include media($lg-min) {
   @include make-grid(lg);
 }
