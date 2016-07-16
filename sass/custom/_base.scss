@@ -27,12 +27,12 @@ p a {
 //horizontal rules
 hr.redline {
     //design
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid $red;
+    border-left: em(5px) solid transparent;
+    border-right: em(5px) solid transparent;
+    border-top: em(6px) solid $red;
     
     //layout
-    width: 90px;
+    width: em(90px);
 }
 
 hr.greyline {

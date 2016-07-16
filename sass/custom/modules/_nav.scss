@@ -46,11 +46,6 @@ nav a {
     
     //layout
     @include padding-top-bottom(0.4rem);
-
-	@include media($sm-min) {
-		//design
-		pointer-events: none; //remove link to top on desktop
-	}
 }
 
 .nav-list {
@@ -91,43 +86,50 @@ nav a {
 //for desktop layout
 @include media($sm-min) {
     
-    nav {
-        //design
-        @include palette($charcoal, $white, $charcoal);
-        
-        //layout
-        position: relative;
-        @include padding-top-bottom(1.5em);
-    }
+    .home {
     
-    .nav__hamburger {
-        display: none;
-    }
-    
-    .nav__logo {
-        //layout
-        float: left;
-    }
-    
-    .nav-list {
-        //layout
-        float: right;
-        display: block !important; //override slideToggle()
-    }
-    
-    .nav-list__item {
-        //layout
-        display: inline-block !important; //override slideToggle()
-        
-        //remove mobile border line
-        &:first-child {
-            border: 0;
+        nav {
+            //design
+            @include palette($charcoal, $white, $charcoal);
+
+            //layout
+            position: relative;
+            @include padding-top-bottom(1.5em);
         }
-    }
-    
-    //nav state
-    .nav-list__item--a.is-highlighted {
-        color: inherit;
-        background-color: inherit;
+
+        .nav__hamburger {
+            display: none;
+        }
+
+        .nav__logo {
+
+            //design
+            pointer-events: none; //remove link to top on desktop
+
+            //layout
+            float: left;
+        }
+
+        .nav-list {
+            //layout
+            float: right;
+            display: block !important; //override slideToggle()
+        }
+
+        .nav-list__item {
+            //layout
+            display: inline-block !important; //override slideToggle()
+
+            //remove mobile border line
+            &:first-child {
+                border: 0;
+            }
+        }
+
+        //nav state
+        .nav-list__item--a.is-highlighted {
+            color: inherit;
+            background-color: inherit;
+        }
     }
 }
