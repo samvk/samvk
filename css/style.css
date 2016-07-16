@@ -997,7 +997,7 @@ html {
 }
 @media screen and (max-width: 767px) {
   .h5, h5, .nav__logo, .project__audio-warning {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
 }
 
