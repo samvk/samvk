@@ -59,9 +59,9 @@
             <div class="col-md-9 center center-content">
                 <img class="circle about__headshot" src="img/headshot.png" alt="headshot">
 				
-				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
+				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES7) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
 				<p>On a personal note: I love metal detecting, watching movies, the theatre, and building things.</p>
-                <p>You can <a href="https://github.com/samvk" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/sam-kauffman-111b18ba" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
+                <p>You can <a href="https://github.com/samvk" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/samvk" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
 
 				<a class="autoscroll button" href="#projects">View my projects</a>
             </div>
@@ -139,6 +139,7 @@
 					<a class="project__link" href="http://teamfortress2.samvk.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/teamfortress2.png" alt="teamfortress2.samvk.com">
+                        <p class="project__wip">WIP</p>
                         <span class="fa fa-volume-up project__audio-warning"></span>
                     </a>
                     <ul class="list--inline-block center-content">
@@ -189,7 +190,7 @@
                     <div class="contact-card">
                         <span class="fa fa-fw fa-map-marker contact-card__icon"></span>
                         <p class="contact-card__text">
-                            101 Four Mile Road,<br>
+                            101 Four Mile Road<br>
                             West Hartford, CT<br>
                             06107
                         </p>
@@ -250,7 +251,7 @@
 	
 		<ul class="list--inline-block list--no-spacing social__links">
 			<li><a href="https://github.com/samvk" target="_blank" title="GitHub"><span class="fa fa-fw fa-github"></span></a></li>
-			<li><a href="https://linkedin.com/in/sam-kauffman-111b18ba" target="_blank" title="LinkedIn"><span class="fa fa-fw fa-linkedin"></span></a></li>
+            <li><a href="https://linkedin.com/in/samvk" target="_blank" title="LinkedIn"><span class="fa fa-fw fa-linkedin"></span></a></li>
 			<li><a href="docs/SamKauffman_Resume.pdf" target="_blank" title="My resume"><span class="fa fa-fw fa-file-text-o"></span></a></li>
 			<li><a href="mailto:hello@samvk.com" target="_blank" title="Email me"><span class="fa fa-fw fa-envelope"></span></a></li>
 		</ul>
