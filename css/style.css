@@ -984,7 +984,7 @@ html {
 }
 
 .h4, h4 {
-  font-size: 2.1em;
+  font-size: 2.15em;
 }
 @media screen and (max-width: 767px) {
   .h4, h4 {
@@ -993,11 +993,11 @@ html {
 }
 
 .h5, h5, .nav__logo, .project__audio-warning {
-  font-size: 2em;
+  font-size: 2.1em;
 }
 @media screen and (max-width: 767px) {
   .h5, h5, .nav__logo, .project__audio-warning {
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
 }
 
