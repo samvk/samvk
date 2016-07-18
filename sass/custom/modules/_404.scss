@@ -6,9 +6,27 @@
     background-color: $offwhite;
 }
 
+._404 nav {
+    //design
+    @include palette($white, $charcoal, $white);
+
+    //layout
+    padding: 0;
+}
+
+._404 .nav__logo {
+    //design
+    pointer-events: all;
+    @include hover($red);
+}
+
 ._404__container {
     //text
     font-size: 1em;
+    
+    //design
+    @extend .text-center;
+    @extend .no-spacing;
 
     //layout
     padding: 0;
@@ -19,6 +37,6 @@
     
     .redline {
         //layout
-        margin-top: 0;
+        @include margin-top-bottom(0);
     }
 }

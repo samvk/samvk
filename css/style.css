@@ -57,7 +57,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.button, button, a, p a, nav a {
+.button, button, a, p a, nav a, ._404 .nav__logo {
   -moz-transition: color 150ms linear, background-color 150ms linear;
   -o-transition: color 150ms linear, background-color 150ms linear;
   -webkit-transition: color 150ms linear, background-color 150ms linear;
@@ -1145,7 +1145,7 @@ sub {
   text-align: left;
 }
 
-.text-center, .h1, h1, .project__wip, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
+.text-center, .h1, h1, .project__wip, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright, ._404__container {
   text-align: center;
 }
 
@@ -1299,14 +1299,14 @@ sub {
   padding-right: 0;
 }
 
-.no-spacing, .nav-list, footer, .social__links {
+.no-spacing, .nav-list, footer, .social__links, ._404__container {
   margin-bottom: 0;
 }
-.no-spacing p, .nav-list p, footer p, .social__links p, .no-spacing ul, .nav-list ul, footer ul, .social__links ul, .no-spacing li, .nav-list li, footer li, .social__links li {
+.no-spacing p, .nav-list p, footer p, .social__links p, ._404__container p, .no-spacing ul, .nav-list ul, footer ul, .social__links ul, ._404__container ul, .no-spacing li, .nav-list li, footer li, .social__links li, ._404__container li {
   margin-bottom: 0;
 }
 
-p.no-spacing, p.nav-list, p.social__links, ul.no-spacing, ul.nav-list, ul.social__links, li.no-spacing, li.nav-list, li.social__links {
+p.no-spacing, p.nav-list, p.social__links, p._404__container, ul.no-spacing, ul.nav-list, ul.social__links, ul._404__container, li.no-spacing, li.nav-list, li.social__links, li._404__container {
   margin-bottom: 0;
 }
 
@@ -1495,37 +1495,42 @@ nav a:hover, nav a:active {
 }
 
 @media screen and (min-width: 768px) {
-  .home nav {
+  nav {
     background-color: #FFF;
     color: #262626;
     position: relative;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
-  .home nav p, .home nav blockquote, .home nav li {
+  nav p, nav blockquote, nav li {
     color: #262626;
   }
-  .home nav a {
+  nav a {
     color: #262626;
   }
-  .home .nav__hamburger {
+
+  .nav__hamburger {
     display: none;
   }
-  .home .nav__logo {
+
+  .nav__logo {
     pointer-events: none;
     float: left;
   }
-  .home .nav-list {
+
+  .nav-list {
     float: right;
     display: block !important;
   }
-  .home .nav-list__item {
+
+  .nav-list__item {
     display: inline-block !important;
   }
-  .home .nav-list__item:first-child {
+  .nav-list__item:first-child {
     border: 0;
   }
-  .home .nav-list__item--a.is-highlighted {
+
+  .nav-list__item--a.is-highlighted {
     color: inherit;
     background-color: inherit;
   }
@@ -1724,6 +1729,25 @@ footer hr {
   background-color: #F0F0F0;
 }
 
+._404 nav {
+  background-color: #262626;
+  color: #FFF;
+  padding: 0;
+}
+._404 nav p, ._404 nav blockquote, ._404 nav li {
+  color: #FFF;
+}
+._404 nav a {
+  color: #FFF;
+}
+
+._404 .nav__logo {
+  pointer-events: all;
+}
+._404 .nav__logo:hover, ._404 .nav__logo:active {
+  color: #EF6250;
+}
+
 ._404__container {
   font-size: 1em;
   padding: 0;
@@ -1734,6 +1758,7 @@ footer hr {
 }
 ._404__container .redline {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

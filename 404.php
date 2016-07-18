@@ -10,8 +10,8 @@
         </div>
     </nav>
 
-    <section class="_404__container text-center">
-        <h1>404</h1>
+    <section class="_404__container">
+        <h1 class="lhalf">404</h1>
         <hr class="redline">
         <p class="italic">Page not found</p>
         <a class="button" href="/"><span class="fa fa-arrow-circle-left"></span> Go Home</a>

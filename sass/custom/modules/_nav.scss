@@ -85,51 +85,49 @@ nav a {
 
 //for desktop layout
 @include media($sm-min) {
-    
-    .home {
-    
-        nav {
-            //design
-            @include palette($charcoal, $white, $charcoal);
 
-            //layout
-            position: relative;
-            @include padding-top-bottom(1.5em);
-        }
+    nav {
+        //design
+        @include palette($charcoal, $white, $charcoal);
 
-        .nav__hamburger {
-            display: none;
-        }
+        //layout
+        position: relative;
+        @include padding-top-bottom(1.5em);
+    }
 
-        .nav__logo {
+    .nav__hamburger {
+        display: none;
+    }
 
-            //design
-            pointer-events: none; //remove link to top on desktop
+    .nav__logo {
 
-            //layout
-            float: left;
-        }
+        //design
+        pointer-events: none; //remove link to top on desktop
 
-        .nav-list {
-            //layout
-            float: right;
-            display: block !important; //override slideToggle()
-        }
+        //layout
+        float: left;
+    }
 
-        .nav-list__item {
-            //layout
-            display: inline-block !important; //override slideToggle()
+    .nav-list {
+        //layout
+        float: right;
+        display: block !important; //override slideToggle()
+    }
 
-            //remove mobile border line
-            &:first-child {
-                border: 0;
-            }
-        }
+    .nav-list__item {
+        //layout
+        display: inline-block !important; //override slideToggle()
 
-        //nav state
-        .nav-list__item--a.is-highlighted {
-            color: inherit;
-            background-color: inherit;
+        //remove mobile border line
+        &:first-child {
+            border: 0;
         }
     }
+
+    //nav state
+    .nav-list__item--a.is-highlighted {
+        color: inherit;
+        background-color: inherit;
+    }
+
 }
