@@ -113,7 +113,6 @@
 					<a class="project__link" href="http://teamfortress2.samvk.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/teamfortress2.png" alt="teamfortress2.samvk.com">
-                        <p class="project__wip">WIP</p>
                         <span class="fa fa-volume-up project__audio-warning"></span>
                     </a>
                     <ul class="list--inline-block center-content">
@@ -244,8 +243,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 	<!-- Javascript -->
-	<script src="/js/contact.js"></script>
-	<script src="/js/script.js"></script>
+	<script src="/js/contact.min.js"></script>
+	<script src="/js/script.min.js"></script>
 
 </body>
 

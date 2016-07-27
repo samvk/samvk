@@ -70,21 +70,6 @@
     opacity: 0;
 }
 
-.project__wip {
-    //text
-    @extend .h1;
-    
-    //design
-    color: $darkred;
-    text-shadow: 1px 1px 2px $black;
-    opacity: 0.7;
-
-    //layout
-    @include absolute(top 50% left 50%);
-    transform: translate(-50%, -50%);
-    
-}
-
 .project__audio-warning {
     //text
     @extend .h5;

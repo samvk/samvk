@@ -956,11 +956,11 @@ html {
   }
 }
 
-.h1, h1, .project__wip {
+.h1, h1 {
   font-size: 4.5em;
 }
 @media screen and (max-width: 767px) {
-  .h1, h1, .project__wip {
+  .h1, h1 {
     font-size: 3.6em;
   }
 }
@@ -1145,7 +1145,7 @@ sub {
   text-align: left;
 }
 
-.text-center, .h1, h1, .project__wip, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright, ._404__container {
+.text-center, .h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright, ._404__container {
   text-align: center;
 }
 
@@ -1372,7 +1372,7 @@ body {
   color: #262626;
 }
 
-.h1, h1, .project__wip, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
+.h1, h1, .h2, h2, .contact-card__icon, .h3, h3, .nav__hamburger, .project__icon, .social__links, .h4, h4, .h5, h5, .nav__logo, .project__audio-warning, .h6, h6, .header__sub-title, .project__button, .footer__copyright {
   font-weight: 900;
 }
 
@@ -1608,16 +1608,6 @@ header {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
-}
-
-.project__wip {
-  color: #EC412C;
-  text-shadow: 1px 1px 2px #0B0B0B;
-  opacity: 0.7;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 
 .project__audio-warning {
