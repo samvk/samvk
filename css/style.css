@@ -1554,6 +1554,7 @@ header {
 
 .about__headshot {
   border: 5px solid #E6E6E6;
+  max-width: 370px;
 }
 
 .project {
@@ -1563,6 +1564,7 @@ header {
 .project__link {
   position: relative;
   max-width: 358px;
+  width: 100%;
 }
 .project__link:hover > .project__pic {
   opacity: 0.8;
