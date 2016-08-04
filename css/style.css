@@ -1554,7 +1554,7 @@ header {
 
 .about__headshot {
   border: 5px solid #E6E6E6;
-  max-width: 370px;
+  width: 370px;
 }
 
 .project {
