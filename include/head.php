@@ -10,7 +10,7 @@
     <meta name="description" content="I am a front-end web developer in Hartford, CT looking for a starting position.">
     <meta name="theme-color" content="#EF6250">
 
-    <title>SamVK</title>
+    <title>SamVK | My Portfolio</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
