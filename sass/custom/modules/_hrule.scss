@@ -1,0 +1,22 @@
+// ==========================================================================
+// HORIZONTAL RULES
+// ==========================================================================//
+
+hr.redline {
+    //design
+    border-left: em(5px) solid transparent;
+    border-right: em(5px) solid transparent;
+    border-top: em(6px) solid $red;
+    
+    //layout
+    width: em(90px);
+}
+
+hr.greyline {
+    //design
+    background-color: #F0F0F0;
+
+    //layout
+    width: 80%;
+    max-width: 800px;
+}
