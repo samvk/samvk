@@ -63,5 +63,14 @@ $(document).ready(function () {
     }).blur(function () {
         $(this).siblings(".input__placeholder").removeClass("loud");
     });
+    
+    /*********** Contact form submission ***********/
+
+    $("#contact-form").submitForm( response => {
+        $(".contact-form__submit, .input--placeholder").fadeTo(300, 0, () => {
+            $(".contact-form__submit").replaceWith(response);
+            $("#contact-form").trigger("reset").find(":input").prop("disabled", true);
+        });
+    });
 
 });
