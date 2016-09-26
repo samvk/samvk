@@ -38,7 +38,7 @@ $stmt->execute(array(':name' => $name, ':email' => $email, ':phone' => $phone, '
 
 // Send message to email
 $to = "hello@samvk.com";
-$email_subject = "New message from $name - SamVK";
+$email_subject = "New message from $name | SamVK";
 $email_body = "You have received a new message from SamVK. Here are the details...\n\nName: $name\n\nEmail: $email\n\nPhone Number: $phone\n\nMessage:\n$message";
 $headers = "From: samvk.com\n";
 $headers .= "Reply-To: $email_address";	
