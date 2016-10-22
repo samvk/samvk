@@ -88,3 +88,9 @@
     //text
     @extend .h3;
 }
+
+//add shadow to pop featured project
+.project.is-featured .project__pic {
+	box-shadow: 0 0 6px 1px $red;
+	border: 1px solid rgba(239, 98, 80, 0.55);
+}
