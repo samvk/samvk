@@ -33,7 +33,7 @@
             <div class="col-md-9 center center-content">
                 <img class="circle about__headshot" src="img/headshot.jpg" alt="headshot">
 				
-				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES7) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
+				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves building apps and bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES7) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
 				<p>On a personal note: I love metal detecting, watching movies, the theatre, and building things.</p>
                 <p>You can <a href="https://github.com/samvk" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/samvk" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
 
@@ -52,45 +52,56 @@
 			
 			<div class="row">
 				
-				<h3>Websites</h3>
-				<hr class="redline">	
+				<h3>For The Web</h3>
+				<hr class="redline">
 
 				<div class="col-sm-4 project">
-					<a class="project__link" href="http://cttreasurehunter.com" target="_blank">
+					<a class="project__link" href="https://postcard.samvk.com" target="_blank">
+						<p class="project__button">See Project &rarr;</p>
+						<img class="project__pic" src="img/projects/greetingsworld.png" alt="GreetingsWorld.us">
+					</a>
+					<ul class="list--inline-block center-content">
+						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/postcard-creator" target="_blank"><span class="fa fa-github-square"></span></a></li>
+						<li><a class="project__icon" title="See local version" href="https://postcard.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4 project">
+					<a class="project__link" href="https://cttreasurehunter.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/cttreasurehunter.png" alt="ctTreasureHunter.com">
                     </a>
                     <ul class="list--inline-block center-content">
 						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/cttreasurehunter" target="_blank"><span class="fa fa-github-square"></span></a></li>
-						<li><a class="project__icon" title="See local version" href="http://cttreasurehunter.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+						<li><a class="project__icon" title="See local version" href="https://cttreasurehunter.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
                     </ul>
                 </div>
 
 				<div class="col-sm-4 project">
-					<a class="project__link" href="http://readeverydayclub.com" target="_blank">
+					<a class="project__link" href="https://readeverydayclub.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/readeveryday.png" alt="ReadEveryDayclub.com">
                     </a>
                     <ul class="list--inline-block center-content">
 						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/readeveryday" target="_blank"><span class="fa fa-github-square"></span></a></li>
-						<li><a class="project__icon" title="See local version" href="http://readeveryday.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+						<li><a class="project__icon" title="See local version" href="https://readeveryday.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
 					</ul>
                 </div>
 
+			</div>
+
+			<div class="row">
+
 				<div class="col-sm-4 project">
-					<a class="project__link" href="http://daterussell.com" target="_blank">
+					<a class="project__link" href="https://daterussell.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/daterussell.png" alt="DateRussell.com">
                     </a>
                     <ul class="list--inline-block center-content">
 						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/daterussell" target="_blank"><span class="fa fa-github-square"></span></a></li>
-						<li><a class="project__icon" title="See local version" href="http://daterussell.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+						<li><a class="project__icon" title="See local version" href="https://daterussell.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
 					</ul>
                 </div>
-
-			</div>
-			
-			<div class="row">
 
 				<div class="col-sm-4 project">
 					<a class="project__link" href=".">
@@ -106,11 +117,11 @@
 			
 			<div class="row">
 				
-				<h3>Games</h3>
+				<h3>Just for Fun</h3>
 				<hr class="redline">
 
 				<div class="col-sm-4 project">
-					<a class="project__link" href="http://teamfortress2.samvk.com" target="_blank">
+					<a class="project__link" href="https://teamfortress2.samvk.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/teamfortress2.png" alt="teamfortress2.samvk.com">
                         <span class="fa fa-volume-up project__audio-warning"></span>
@@ -121,7 +132,7 @@
                 </div>
 
 				<div class="col-sm-4 project">
-					<a class="project__link" href="http://snake.samvk.com" target="_blank">
+					<a class="project__link" href="https://snake.samvk.com" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/snake.png" alt="snake.samvk.com">
                     </a>
@@ -131,7 +142,7 @@
                 </div>
                 
                 <div class="col-sm-4 project">
-                    <a class="project__link" href="http://cttreasurehunter.com/metaldetecting" target="_blank">
+                    <a class="project__link" href="https://cttreasurehunter.com/metaldetecting" target="_blank">
                         <p class="project__button">See Project &rarr;</p>
                         <img class="project__pic" src="img/projects/metaldetecting.png" alt="metaldetecting.samvk.com">
                     </a>
