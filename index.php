@@ -55,7 +55,7 @@
 				<h3>For The Web</h3>
 				<hr class="redline">
 
-				<div class="col-sm-4 project">
+				<div class="col-sm-4 project is-featured">
 					<a class="project__link" href="https://postcard.samvk.com" target="_blank">
 						<p class="project__button">See Project &rarr;</p>
 						<img class="project__pic" src="img/projects/greetingsworld.png" alt="GreetingsWorld.us">
