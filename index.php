@@ -104,7 +104,7 @@
                 </div>
 
 				<div class="col-sm-4 project">
-					<a class="project__link" href=".">
+					<a class="project__link" href="https://samvk.com">
 						<p class="project__button">See Project &rarr;</p>
 						<img class="project__pic" src="img/projects/samvk.png" alt="samvk.com">
 					</a>
