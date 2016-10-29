@@ -33,7 +33,7 @@
             <div class="col-md-9 center center-content">
                 <img class="circle about__headshot" src="img/headshot.jpg" alt="headshot">
 				
-				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves building apps and bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES7) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
+				<p>Hi, my name's Sam. I'm a twenty-something year old front-end web developer who loves building apps and bringing others' designs to life. My go-to technologies right now are HTML5, CSS3, Sass(SCSS), and JavaScript(ES6) + jQuery.  I'm in the process of learning PHP &amp; MySQL to become a better front-end coder and future full-stack developer.</p>
 				<p>On a personal note: I love metal detecting, watching movies, the theatre, and building things.</p>
                 <p>You can <a href="https://github.com/samvk" target="_blank">check me out on GitHub<sup><span class="fa fa-external-link"></span></sup></a>, <a href="https://linkedin.com/in/samvk" target="_blank">find me on LinkedIn<sup><span class="fa fa-external-link"></span></sup></a>, <a href="docs/SamKauffman_Resume.pdf" target="_blank">take a look at my resume</a>, or view some of my projects below.</p>
 
