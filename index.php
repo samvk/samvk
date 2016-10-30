@@ -56,13 +56,13 @@
 				<hr class="redline">
 
 				<div class="col-sm-4 project is-featured">
-					<a class="project__link" href="https://postcard.samvk.com" target="_blank">
+					<a class="project__link" href="https://greetingsworld.us" target="_blank">
 						<p class="project__button">See Project &rarr;</p>
 						<img class="project__pic" src="img/projects/greetingsworld.png" alt="GreetingsWorld.us">
 					</a>
 					<ul class="list--inline-block center-content">
 						<li><a class="project__icon" title="GitHub" href="https://github.com/samvk/postcard-creator" target="_blank"><span class="fa fa-github-square"></span></a></li>
-						<li><a class="project__icon" title="See local version" href="https://postcard.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+						<li><a class="project__icon" title="See local version" href="https://greetingsworld.samvk.com" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
 					</ul>
 				</div>
 
@@ -117,7 +117,7 @@
 			
 			<div class="row">
 				
-				<h3>Just for Fun</h3>
+				<h3>Just For Fun</h3>
 				<hr class="redline">
 
 				<div class="col-sm-4 project">
@@ -148,7 +148,7 @@
                     </a>
                     <ul class="list--inline-block center-content">
                         <li><a class="project__icon" title="GitHub" href="https://github.com/samvk/metaldetecting" target="_blank"><span class="fa fa-github-square"></span></a></li>
-                        <li><a class="project__icon" title="See local version" href="http://cttreasurehunter.samvk.com/metaldetecting" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
+                        <li><a class="project__icon" title="See local version" href="https://cttreasurehunter.samvk.com/metaldetecting" target="_blank"><span class="fa fa-external-link-square"></span></a></li>
                     </ul>
                 </div>
 
