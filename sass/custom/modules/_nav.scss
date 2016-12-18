@@ -33,7 +33,7 @@ nav a {
     //layout
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+	@include transform(translateY(-50%));
     right: 0;
     width: 32px;
 }

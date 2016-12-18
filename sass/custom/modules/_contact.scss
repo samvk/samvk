@@ -41,14 +41,14 @@ textarea {
     @include transition(opacity 500ms, transform 500ms);
     visibility: hidden;
     opacity: 0;
-    transform: translateY(100%);
+	@include transform(translateY(100%));
 }
 
 .input__placeholder.is-displayed {
     //transitions
     visibility: visible;
     opacity: 1.0;
-    transform: translateY(0%);
+	@include transform(translateY(0%));
 }
 // ===========================================//
 
