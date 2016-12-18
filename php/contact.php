@@ -27,14 +27,22 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 //Spam bot honeypot
-if ($_POST["address"] !== "") {
+if (!empty($_POST["address"])) {
     echo "<p class='loud'>Bad form input.</p>";
     exit;
 }
 
 // Send message to database
-$stmt = $db->prepare("INSERT INTO contact(name, email, phone, message) VALUES (:name, :email, :phone, :message)");
-$stmt->execute(array(':name' => $name, ':email' => $email, ':phone' => $phone, ':message' => $message));
+$stmt = $db->prepare(
+	"INSERT INTO contact(name, email, phone, message)
+	VALUES (:name, :email, :phone, :message)"
+);
+$stmt->execute(array(
+	':name' => $name,
+	':email' => $email,
+	':phone' => $phone,
+	':message' => $message)
+);
 
 // Send message to email
 $to = "hello@samvk.com";
