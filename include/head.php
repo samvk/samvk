@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="author" content="Sam Kauffman">
-    <meta name="description" content="I am a front-end web developer in Hartford, CT looking for a starting position.">
+    <meta name="description" content="I am a front-end web developer based in Hartford, CT.">
     <meta name="theme-color" content="#EF6250">
 
     <title>SamVK | My Portfolio</title>
