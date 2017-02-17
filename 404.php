@@ -1,7 +1,6 @@
 <?php require "include/head.php" ?>
 
 <body class="_404">
-    
     <nav>
         <div class="container">
             <div class="relative">
